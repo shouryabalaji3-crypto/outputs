@@ -1,0 +1,113 @@
+{
+  "status": "completed",
+  "generated_at": "2026-09-17T21:33:08.127539+00:00",
+  "mode": "all",
+  "device": "xpu",
+  "checkpoint": "C:\\Users\\shour\\major101\\outputs\\training\\fusion_3d_unified\\phase3_fusion_3d.pth",
+  "checkpoint_epoch": 27,
+  "zenodo_root": "C:\\Users\\shour\\major101\\data\\zenodo_paired\\cerebrovascular-disease",
+  "ibsr_root": "D:\\major101_data\\ibsr_raw\\dicom",
+  "target_shape_d_h_w": [
+    128,
+    128,
+    128
+  ],
+  "frozen_checkpoint": true,
+  "n_completed": 43,
+  "n_skipped": 0,
+  "aggregate_metrics": {
+    "Zenodo held-out test": {
+      "n": 3,
+      "normalized_mae": {
+        "mean": 0.12904602537552515,
+        "std": 0.009122476643625843,
+        "median": 0.1292218565940857,
+        "min": 0.11983690410852432,
+        "max": 0.13807931542396545
+      },
+      "normalized_mse": {
+        "mean": 0.04055562491218249,
+        "std": 0.011270679780918797,
+        "median": 0.040572576224803925,
+        "min": 0.02927647903561592,
+        "max": 0.051817819476127625
+      },
+      "normalized_rmse": {
+        "mean": 0.20005511335902337,
+        "std": 0.02829071926685821,
+        "median": 0.20142635434521453,
+        "min": 0.17110370842157666,
+        "max": 0.227635277310279
+      },
+      "psnr_db_data_range_1": {
+        "mean": 14.035898122684925,
+        "std": 1.244021825963668,
+        "median": 13.917674151526025,
+        "min": 12.855208663291613,
+        "max": 15.334811553237133
+      },
+      "ssim3d_gaussian": {
+        "mean": 0.11897052576144536,
+        "std": 0.016011266765470454,
+        "median": 0.11187394708395004,
+        "min": 0.10773403942584991,
+        "max": 0.13730359077453613
+      },
+      "normalized_ncc": {
+        "mean": 0.6743877331415812,
+        "std": 0.08779497223595678,
+        "median": 0.6659649014472961,
+        "min": 0.5911077260971069,
+        "max": 0.7660905718803406
+      }
+    },
+    "IBSR external DICOM domain shift": {
+      "n": 40,
+      "normalized_mae": {
+        "mean": 0.1683870367705822,
+        "std": 0.00813614033497228,
+        "median": 0.16759687662124634,
+        "min": 0.15633124113082886,
+        "max": 0.19132289290428162
+      },
+      "normalized_mse": {
+        "mean": 0.06250573638826609,
+        "std": 0.007863376252791173,
+        "median": 0.06068682670593262,
+        "min": 0.05242949724197388,
+        "max": 0.08744150400161743
+      },
+      "normalized_rmse": {
+        "mean": 0.24955472571947576,
+        "std": 0.015297905314741025,
+        "median": 0.2463465625559505,
+        "min": 0.2289748834304188,
+        "max": 0.29570509634028536
+      },
+      "psnr_db_data_range_1": {
+        "mean": 12.072071983925918,
+        "std": 0.5194059964403372,
+        "median": 12.169084024070322,
+        "min": 10.582823810905378,
+        "max": 12.804243068119938
+      },
+      "ssim3d_gaussian": {
+        "mean": 0.060157083254307506,
+        "std": 0.020728269300330796,
+        "median": 0.06759118661284447,
+        "min": 0.02367810159921646,
+        "max": 0.08859138935804367
+      },
+      "normalized_ncc": {
+        "mean": 0.3509485077112913,
+        "std": 0.06101616881232421,
+        "median": 0.3590717762708664,
+        "min": 0.2097480446100235,
+        "max": 0.4817873537540436
+      }
+    }
+  },
+  "skipped_cases": [],
+  "classification_metrics": null,
+  "classification_note": "Not measured: the frozen CT+MRI checkpoint has no verified tumour labels and was trained self-supervised."
+}
