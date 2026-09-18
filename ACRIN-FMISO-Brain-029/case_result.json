@@ -1,0 +1,76 @@
+{
+  "checkpoint_epoch": 27,
+  "dicom_subject": "D:\\major101_data\\ibsr_raw\\dicom\\6\\ACRIN-FMISO-Brain-029",
+  "ct_series_selector": "largest-readable-series-fallback",
+  "mri_series_selector": "POST",
+  "ct_series": {
+    "directory": "D:\\major101_data\\ibsr_raw\\dicom\\6\\ACRIN-FMISO-Brain-029\\CT\\STD\\3.000000-CT 2.5MM STD-81719",
+    "modality": "CT",
+    "patient_id": "ACRIN-FMISO-Brain-029",
+    "series_instance_uid": "1.3.6.1.4.1.14519.5.2.1.7009.2402.195415974375355584992315281719",
+    "series_description": "CT 2.5MM STD",
+    "protocol_name": "6.5 ACRIN FMISO 3D BRAIN",
+    "file_count": 61,
+    "original_shape_d_h_w": [
+      61,
+      512,
+      512
+    ],
+    "pixel_spacing": [
+      0.673828,
+      0.673828
+    ],
+    "slice_thickness": 2.5
+  },
+  "mri_series": {
+    "directory": "D:\\major101_data\\ibsr_raw\\dicom\\6\\ACRIN-FMISO-Brain-029\\MR\\2001.000000-MPRAGE POST-73830",
+    "modality": "MR",
+    "patient_id": "ACRIN-FMISO-Brain-029",
+    "series_instance_uid": "1.3.6.1.4.1.14519.5.2.1.7009.2402.161106050223803177661588773830",
+    "series_description": "MPRAGE POST",
+    "protocol_name": "WIP MPRAGE POST SENSE",
+    "file_count": 170,
+    "original_shape_d_h_w": [
+      170,
+      256,
+      256
+    ],
+    "pixel_spacing": [
+      1.0,
+      1.0
+    ],
+    "slice_thickness": 1.0
+  },
+  "raw_ct_shape_d_h_w": [
+    61,
+    512,
+    512
+  ],
+  "raw_mri_shape_d_h_w": [
+    170,
+    256,
+    256
+  ],
+  "preprocessing": "DICOM pixel conversion, CT clip [-100,300] to [0,1], MRI min/max normalization, independent resize to 128^3",
+  "registration": "not performed; external domain-shift result only",
+  "case_id": "ACRIN-FMISO-Brain-029",
+  "source": "IBSR external DICOM domain shift",
+  "input_shape_d_h_w": [
+    128,
+    128,
+    128
+  ],
+  "metrics": {
+    "normalized_mae": 0.16618207097053528,
+    "normalized_mse": 0.0594184584915638,
+    "normalized_rmse": 0.24375901725180096,
+    "psnr_db_data_range_1": 12.260786194002726,
+    "ssim3d_gaussian": 0.04440172016620636,
+    "normalized_ncc": 0.3067179322242737
+  },
+  "outputs": {
+    "proof_png": "C:\\Users\\shour\\major101\\outputs\\benchmarks\\fusion_ctmri\\ibsr_external\\ACRIN-FMISO-Brain-029\\inference_proof.png",
+    "ct_reconstruction_nifti": "C:\\Users\\shour\\major101\\outputs\\benchmarks\\fusion_ctmri\\ibsr_external\\ACRIN-FMISO-Brain-029\\ct_reconstruction_128.nii.gz",
+    "fused_features_npy": "C:\\Users\\shour\\major101\\outputs\\benchmarks\\fusion_ctmri\\ibsr_external\\ACRIN-FMISO-Brain-029\\fused_features.npy"
+  }
+}
