@@ -1,0 +1,25 @@
+{
+  "checkpoint_epoch": 27,
+  "preprocessing": "ZenodoPairedDataset: CT clip [-100,300] to [0,1], MRI max normalization, resize to 128^3",
+  "registration": "not performed; matches training loader",
+  "case_id": "sub-18",
+  "source": "Zenodo held-out test",
+  "input_shape_d_h_w": [
+    128,
+    128,
+    128
+  ],
+  "metrics": {
+    "normalized_mae": 0.1292218565940857,
+    "normalized_mse": 0.040572576224803925,
+    "normalized_rmse": 0.20142635434521453,
+    "psnr_db_data_range_1": 13.917674151526025,
+    "ssim3d_gaussian": 0.11187394708395004,
+    "normalized_ncc": 0.6659649014472961
+  },
+  "outputs": {
+    "proof_png": "C:\\Users\\shour\\major101\\outputs\\benchmarks\\fusion_ctmri\\zenodo_test\\sub-18\\inference_proof.png",
+    "ct_reconstruction_nifti": "C:\\Users\\shour\\major101\\outputs\\benchmarks\\fusion_ctmri\\zenodo_test\\sub-18\\ct_reconstruction_128.nii.gz",
+    "fused_features_npy": "C:\\Users\\shour\\major101\\outputs\\benchmarks\\fusion_ctmri\\zenodo_test\\sub-18\\fused_features.npy"
+  }
+}
