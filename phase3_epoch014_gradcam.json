@@ -1,0 +1,21 @@
+{
+  "epoch": 14,
+  "predicted_branch": 1,
+  "probability": 0.5289661288261414,
+  "target_layers": {
+    "mri": "mri_encoder.encoder.layer4[-1]",
+    "ct": "ct_encoder.encoder.layer4[-1]"
+  },
+  "mri_peak_voxel": [
+    80,
+    80,
+    112
+  ],
+  "ct_peak_voxel": [
+    112,
+    80,
+    112
+  ],
+  "image": "phase3_epoch014_gradcam.png",
+  "interpretation": "diagnostic attribution probe; no tumour label is used"
+}
