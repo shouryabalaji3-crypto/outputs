@@ -1,0 +1,14 @@
+{
+  "epoch": 2,
+  "case": "BraTS-GLI-00080-100",
+  "true_label": 1,
+  "predicted_label": 0,
+  "probability": 0.48291683197021484,
+  "target_layer": "model.features[-1]",
+  "peak_voxel": [
+    98,
+    54,
+    98
+  ],
+  "image": "epoch_002_gradcam.png"
+}
